@@ -148,24 +148,15 @@ var cities = [
 
 // Loop through the cities array and create one marker for each city object
 for (var i = 0; i < cities.length; i++) {
-
-  var sunicon = L.icon({
-    iconUrl:'Sun_icon.png',
-    // Setting our circle's radius equal to the output of our markerSize function
-    // This will make our marker's size proportionate to its population
-    iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
-  }
-  );
-  var snowicon = L.icon({
-    iconUrl:'HieloSnowflake.png',
-    // Setting our circle's radius equal to the output of our markerSize function
-    // This will make our marker's size proportionate to its population
-    iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
-  }
-  );
 	if (cities[i].snow == "false")
-    	{icon=sunicon;}
-    else {icon=snowicon;}
-  L.marker(cities[i].location, {icon: icon}).bindPopup("<h1>" + cities[i].name + "</h1> <hr> <h3>Population: " + cities[i].population + "</h3>").addTo(myMap);
-
+    	{fllcolor="yellow";}
+    else {fllcolor="blue";}
+  L.circle(cities[i].location, {
+    fillOpacity: 0.75,
+    color: "white",
+    fillColor: fllcolor,
+    // Setting our circle's radius equal to the output of our markerSize function
+    // This will make our marker's size proportionate to its population
+    radius: markerSize(cities[i].population)
+  }).bindPopup("<h1>" + cities[i].name + "</h1> <hr> <h3>Population: " + cities[i].population + "</h3>").addTo(myMap);
 }
