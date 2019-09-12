@@ -21,126 +21,126 @@ var cities = [
 	  {
     name: "Anchorage",
     location: [61.17755, -149.274],
-    population: 44237,
+    population: 48081,
     snow:"true"
   },
 
 {
     name: "Phoenix",
     location: [33.57216, -112.088],
-    population: 439170,
+    population: 584303,
     snow:"false"
   },
 
 {
     name: "Los Angeles",
     location: [34.01939, -118.411],
-    population: 2479015,
+    population: 2811801,
     snow:"false"
   },
 
 {
     name: "San Diego",
     location: [32.8153, -117.135],
-    population: 2479015,
+    population: 697027,
     snow:"false"
   },
 
 {
     name: "Miami",
     location: [25.77516, -80.2086],
-    population: 291688,
+    population: 334859,
     snow:"false"
   },
 
 {
     name: "Atlanta",
     location: [33.76291, -84.4227],
-    population: 487455,
+    population: 495039,
     snow:"false"
   },
 
 {
     name: "Honolulu",
     location: [21.32585, -157.845],
-    population: 294194,
+    population: 324871,
     snow:"false"
   },
 
 {
     name: "Chicago",
     location: [41.83755, -87.6818],
-    population: 3550404,
+    population: 3369357,
     snow:"true"
   },
 
 {
     name: "Fort Wayne",
     location: [41.08817, -85.1439],
-    population: 161776,
+    population: 178269,
     snow:"true"
   },
 
 {
     name: "Louisville",
     location: [38.17808, -85.6667],
-    population: 390639,
+    population: 361706,
     snow:"true"
   },
 
 {
     name: "Detroit",
     location: [42.38304, -83.1022],
-    population: 1670144,
+    population: 1514063,
     snow:"true"
   },
 
 {
     name: "Minneapolis",
     location: [44.96332, -93.2683],
-    population: 482872,
+    population: 434400,
     snow:"true"
   },
 
 {
     name: "New York City",
     location: [40.66427, -73.9385],
-    population: 7781984,
+    population: 7895563,
     snow:"true"
   },
 
 {
     name: "Cleveland",
     location: [41.47814, -81.6795],
-    population: 876050,
+    population: 750879,
     snow:"true"
   },
 
 {
     name: "Nashville",
     location: [36.1718, -86.785],
-    population: 170874,
+    population: 448003,
     snow:"false"
   },
 
 {
     name: "Corpus Christi",
     location: [27.80455, -97.3963],
-    population: 167690,
+    population: 204525,
     snow:"false"
   },
 
 {
     name: "Houston",
     location: [29.78047, -95.3863],
-    population: 938219,
+    population: 1233535,
     snow:"false"
   },
 
 {
     name: "Las Vegas",
     location: [36.0719, -115.1634],
-    population: 64405,
+    population: 125787,
     snow:"false"
   },
 
