@@ -150,14 +150,14 @@ var myMap = L.map("map", {
   for (var i = 0; i < cities.length; i++) {
   
     var sunicon = L.icon({
-      iconUrl:'Sun_icon.png',
+      iconUrl:'./static/Sun_icon.png',
       // Setting our circle's radius equal to the output of our markerSize function
       // This will make our marker's size proportionate to its population
       iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
     }
     );
     var snowicon = L.icon({
-      iconUrl:'HieloSnowflake.png',
+      iconUrl:'./static/HieloSnowflake.png',
       // Setting our circle's radius equal to the output of our markerSize function
       // This will make our marker's size proportionate to its population
       iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
@@ -169,4 +169,20 @@ var myMap = L.map("map", {
     L.marker(cities[i].location, {icon: icon}).bindPopup("<h1>" + cities[i].name + "</h1> <hr> <h3>Population: " + cities[i].population + "</h3>").addTo(myMap);
   
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

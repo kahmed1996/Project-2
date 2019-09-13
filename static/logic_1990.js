@@ -21,126 +21,126 @@ var myMap = L.map("map", {
         {
       name: "Anchorage",
       location: [61.17755, -149.274],
-      population: 174431,
+      population: 226338,
       snow:"true"
     },
   
   {
       name: "Phoenix",
       location: [33.57216, -112.088],
-      population: 789704,
+      population: 983403,
       snow:"false"
     },
   
   {
       name: "Los Angeles",
       location: [34.01939, -118.411],
-      population: 2968579,
+      population: 3485398,
       snow:"false"
     },
   
   {
       name: "San Diego",
       location: [32.8153, -117.135],
-      population: 875538,
+      population: 1110549,
       snow:"false"
     },
   
   {
       name: "Miami",
       location: [25.77516, -80.2086],
-      population: 346681,
+      population: 358548,
       snow:"false"
     },
   
   {
       name: "Atlanta",
       location: [33.76291, -84.4227],
-      population: 425022,
+      population: 394017,
       snow:"false"
     },
   
   {
       name: "Honolulu",
       location: [21.32585, -157.845],
-      population: 365048,
+      population: 365272,
       snow:"false"
     },
   
   {
       name: "Chicago",
       location: [41.83755, -87.6818],
-      population: 3005072,
+      population: 2783726,
       snow:"true"
     },
   
   {
       name: "Fort Wayne",
       location: [41.08817, -85.1439],
-      population: 172391,
+      population: 173072,
       snow:"true"
     },
   
   {
       name: "Louisville",
       location: [38.17808, -85.6667],
-      population: 298694,
+      population: 269063,
       snow:"true"
     },
   
   {
       name: "Detroit",
       location: [42.38304, -83.1022],
-      population: 1203368,
+      population: 1027974,
       snow:"true"
     },
   
   {
       name: "Minneapolis",
       location: [44.96332, -93.2683],
-      population: 370951,
+      population: 368383,
       snow:"true"
     },
   
   {
       name: "New York City",
       location: [40.66427, -73.9385],
-      population: 7071639,
+      population: 7322564,
       snow:"true"
     },
   
   {
       name: "Cleveland",
       location: [41.47814, -81.6795],
-      population: 573822,
+      population: 505616,
       snow:"true"
     },
   
   {
       name: "Nashville",
       location: [36.1718, -86.785],
-      population: 455651,
+      population: 488374,
       snow:"false"
     },
   
   {
       name: "Corpus Christi",
       location: [27.80455, -97.3963],
-      population: 232134,
+      population: 257453,
       snow:"false"
     },
   
   {
       name: "Houston",
       location: [29.78047, -95.3863],
-      population: 1595138,
+      population: 1630553,
       snow:"false"
     },
   
   {
       name: "Las Vegas",
       location: [36.0719, -115.1634],
-      population: 164674,
+      population: 258295,
       snow:"false"
     },
   
@@ -150,14 +150,14 @@ var myMap = L.map("map", {
   for (var i = 0; i < cities.length; i++) {
   
     var sunicon = L.icon({
-      iconUrl:'Sun_icon.png',
+      iconUrl:'./static/Sun_icon.png',
       // Setting our circle's radius equal to the output of our markerSize function
       // This will make our marker's size proportionate to its population
       iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
     }
     );
     var snowicon = L.icon({
-      iconUrl:'HieloSnowflake.png',
+      iconUrl:'./static/HieloSnowflake.png',
       // Setting our circle's radius equal to the output of our markerSize function
       // This will make our marker's size proportionate to its population
       iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
@@ -169,4 +169,3 @@ var myMap = L.map("map", {
     L.marker(cities[i].location, {icon: icon}).bindPopup("<h1>" + cities[i].name + "</h1> <hr> <h3>Population: " + cities[i].population + "</h3>").addTo(myMap);
   
   }
-  
