@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Population over time</title>
+  <title>City Population/Temperature Layers</title>
 
   <!-- Leaflet CSS & JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
@@ -17,26 +17,18 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
-<a href="/sixty">1960s map</a>
-<a href="/seventy">1970s map</a>
-<a href="/eighty">1980s map</a>
-<a href="/ninety">1990s map</a>
-<a href="/twothousand">2000s map</a>
-<a href="/twothousandten">2010s map</a>
 
 </head>
 
 <body>
   <!-- The div where we will inject our map -->
-
   <div id="map"></div>
-
-  <!-- API key -->=
+  <!-- API key -->
+  
   <script type="text/javascript"  src="{{ url_for('static', filename = 'config.js') }}"></script>
-
+  
   <!-- Our JS -->
-  <script type="text/javascript"  src="{{ url_for('static', filename = 'logic_1950.js') }}"></script>
-  <script type="text/javascript"  src="{{ url_for('static', filename = 'app.js') }}"></script>
+  <script type="text/javascript"  src="{{ url_for('static', filename = 'logic_1980.js') }}"></script>  
 
   <!-- <script type="text/javascript" src="logic1.js"></script> -->
 </body>

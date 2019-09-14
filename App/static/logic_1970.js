@@ -21,128 +21,128 @@ var cities = [
 	  {
     name: "Anchorage",
     location: [61.17755, -149.274],
-    population: 11254,
+    population: 48081,
     snow:"true"
   },
 
 {
     name: "Phoenix",
     location: [33.57216, -112.088],
-    population: 106818,
+    population: 584303,
     snow:"false"
   },
 
 {
     name: "Los Angeles",
     location: [34.01939, -118.411],
-    population: 1970358,
+    population: 2811801,
     snow:"false"
   },
 
 {
     name: "San Diego",
     location: [32.8153, -117.135],
-    population: 334387,
+    population: 697027,
     snow:"false"
   },
 
 {
     name: "Miami",
     location: [25.77516, -80.2086],
-    population: 249276,
+    population: 334859,
     snow:"false"
   },
 
 {
     name: "Atlanta",
     location: [33.76291, -84.4227],
-    population: 331314,
+    population: 495039,
     snow:"false"
   },
 
 {
     name: "Honolulu",
     location: [21.32585, -157.845],
-    population: 248034,
+    population: 324871,
     snow:"false"
   },
 
 {
     name: "Chicago",
     location: [41.83755, -87.6818],
-    population: 3620962,
+    population: 3369357,
     snow:"true"
   },
 
 {
     name: "Fort Wayne",
     location: [41.08817, -85.1439],
-    population: 133607,
+    population: 178269,
     snow:"true"
   },
 
 {
     name: "Louisville",
     location: [38.17808, -85.6667],
-    population: 369129,
+    population: 361706,
     snow:"true"
   },
 
 {
     name: "Detroit",
     location: [42.38304, -83.1022],
-    population: 1849568,
+    population: 1514063,
     snow:"true"
   },
 
 {
     name: "Minneapolis",
     location: [44.96332, -93.2683],
-    population: 521718,
+    population: 434400,
     snow:"true"
   },
 
 {
     name: "New York City",
     location: [40.66427, -73.9385],
-    population: 7891957,
+    population: 7895563,
     snow:"true"
   },
 
 {
     name: "Cleveland",
     location: [41.47814, -81.6795],
-    population: 914808,
+    population: 750879,
     snow:"true"
   },
 
 {
     name: "Nashville",
     location: [36.1718, -86.785],
-    population: 174307,
+    population: 448003,
     snow:"false"
   },
 
 {
     name: "Corpus Christi",
     location: [27.80455, -97.3963],
-    population: 108287,
+    population: 204525,
     snow:"false"
   },
 
 {
     name: "Houston",
     location: [29.78047, -95.3863],
-    population: 596163,
+    population: 1233535,
     snow:"false"
   },
 
 {
     name: "Las Vegas",
     location: [36.0719, -115.1634],
-    population: 24624,
+    population: 125787,
     snow:"false"
-  },
+  }
 
 ];
 
@@ -150,14 +150,14 @@ var cities = [
 for (var i = 0; i < cities.length; i++) {
 
   var sunicon = L.icon({
-    iconUrl:'Sun_icon.png',
+    iconUrl:'./static/Sun_icon.png',
     // Setting our circle's radius equal to the output of our markerSize function
     // This will make our marker's size proportionate to its population
     iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
   }
   );
   var snowicon = L.icon({
-    iconUrl:'HieloSnowflake.png',
+    iconUrl:'./static/HieloSnowflake.png',
     // Setting our circle's radius equal to the output of our markerSize function
     // This will make our marker's size proportionate to its population
     iconSize:[(cities[i].population)/40000,(cities[i].population)/40000],
