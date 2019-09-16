@@ -1,4 +1,9 @@
-from flask import Flask, render_template, current_app, url_for
+from flask import Flask, render_template, current_app, url_for, jsonify
+import numpy as np
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
 
 app = Flask(__name__)
 
@@ -50,6 +55,17 @@ def twothousand():
 @app.route("/twothousandten")
 def twothousandten():
    return render_template("2010.html") 
+
+@app.route("/citypop")
+def citypop():
+    """Return a list of total population of sunny vs. not sunny over time"""
+    session = Session(engine)
+    results = session.query(onlytable2.date,onlytable2.SNOW,onlytable2.NOSNOW).all()
+
+    # Convert list of tuples into normal list
+    citypops = list(np.ravel(results))
+
+    return jsonify(citypops)
 
 
  
