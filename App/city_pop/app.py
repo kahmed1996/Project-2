@@ -4,13 +4,25 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+#################################################
+# Database Setup
+#################################################
+#engine = create_engine("sqlite:///titanic.sqlite")
+engine = create_engine("sqlite:///citypop.sqlite")
+
+# reflect an existing database into a new model
+Base = automap_base()
+# reflect the tables
+Base.prepare(engine, reflect=True)
+
+# Save reference to the table
+#Passenger = Base.classes.passenger
+onlytable2=Base.classes.onlytable2
+
+# Create our session (link) from Python to the DB
+
 
 app = Flask(__name__)
-
-
-
-
-
 
 @app.route("/")
 def home():
