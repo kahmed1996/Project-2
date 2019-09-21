@@ -20,23 +20,38 @@
 <a href="/">1950s map</a>
 <a href="/sixty">1960s map</a>
 <a href="/seventy">1970s map</a>
+<a href="/eighty">1980s map</a>
 <a href="/ninety">1990s map</a>
 <a href="/twothousand">2000s map</a>
-<a href="/twothousandten">2010s map</a>
 <a href="/citypop">Population Figures</a>
+<a href="/dbreturn">JSON</a>
+
 
 </head>
 
-<body>
-  <!-- The div where we will inject our map -->
-  <div id="map"></div>
-  <!-- API key -->
-  
-  <script type="text/javascript"  src="{{ url_for('static', filename = 'config.js') }}"></script>
-  
-  <!-- Our JS -->
-  <script type="text/javascript"  src="{{ url_for('static', filename = 'logic_1980.js') }}"></script>  
-
-  <!-- <script type="text/javascript" src="logic1.js"></script> -->
+<body><br>
+[
+  "1950-01-01", 
+  "15313003", 
+  "4143568", <br>
+  "1960-01-01", 
+  "14958106", 
+  "5905934", <br>
+  "1970-01-01", 
+  "14552318", 
+  "7259750", <br>
+  "1980-01-01", 
+  "12870368", 
+  "8218169", <br>
+  "1990-01-01", 
+  "12676736", 
+  "9331862", <br>
+  "2000-01-01", 
+  "13438826", 
+  "10644909", <br>
+  "2010-01-01", 
+  "13506755", 
+  "11341929"<br>
+] 
 </body>
 </html>
