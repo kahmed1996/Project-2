@@ -8,7 +8,7 @@ Then we cleaned up the data to just reflect the population from 1950 to 2010 for
 The weather data was pulled from NOAA{National Oceanic & Atmosphere Administration).
 
 Here is our Heroku app:
-https://bootcampproject2.herokuapp.com
+https://bootcampproject2v2.herokuapp.com/
 
 Team Members: 
 Nick Benjamin,Kashifa Ahmed ,Mohammed Irshad
